@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - E-commerce Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        /* Product Section */
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .product {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+    
+        .product h2 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 1rem;
+            color: #666;
+            margin: 0 10px 10px;
+        }
+
+        .product button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .product button:hover {
+            background-color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ShopEase</h1>
+        
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#Products">Products</a>
+            <a href="#Find">Find</a>
+            <a href="#Offers">Offers</a>
+            <a href="#Contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <section id="products" class="products">
+        <div class="product">
+            <img src="female_dress.jpg" alt="Product Image 1">
+            <h2>Women's Dresses</h2>
+            <p>₹799</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="shoe.jpg" alt="Product Image 2">
+            <h2>Shoes</h2>
+            <p>₹599</p> 
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="teddy.jpg" alt="Product Image 3">
+            <h2>Soft toys</h2>
+            <p>₹499</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="earbuds.jpg" alt="Product Image 4">
+            <h2>Electronics</h2>
+            <p>₹1,199</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="product">
+            <img src="bedsheet.jpg" alt="Product Image 5">
+            <h2>Bed sheets</h2>
+            <p>₹299</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="phone.jpg" alt="Product Image 6">
+            <h2>Iphone</h2>
+            <p>₹1,40,000</p> 
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="fridge.jpg" alt="Product Image 7">
+            <h2>Fridge</h2>
+            <p>₹39,000</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="sampoo.jpg" alt="Product Image 8">
+            <h2>Pantene Sampoo</h2>
+            <p>₹199</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>  
+
+    <footer>
+        <p>&copy; 2024 ShopEase. All rights reserved.</p>
+    </footer>
+</body>
+</html>
